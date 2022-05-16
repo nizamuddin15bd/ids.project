@@ -1,0 +1,107 @@
+/* fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+/* common classes */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --nav-menu: #777E90;
+    --article-title: black;
+    --paragrap: #878787;
+    --btn-color: #45B26B;
+
+}
+
+.align-center {
+    display: flex;
+    align-items: center;
+}
+
+/* ===========main========== */
+/* header */
+header nav {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 7.5%;
+    width: 70%;
+    margin-left: auto;
+    padding: 25px 0;
+}
+
+header nav li {
+    list-style: none;
+}
+
+header nav li a {
+    text-decoration: none;
+    color: var(--nav-menu);
+    display: inline-block;
+    padding: 12px 27px;
+}
+
+header nav li:last-child a {
+    color: var(--btn-color);
+    border: 1px solid var(--btn-color);
+    border-radius: 90px;
+}
+
+/* hidden */
+.logo-hamBurger-container {
+    display: none;
+}
+
+/* welcome section */
+.welcome-section {
+    margin-left: 12.5%;
+    justify-content: space-between;
+}
+
+
+.welcome-section .img-container {
+    width: 55%;
+    background: linear-gradient(to left, var(--btn-color), white);
+}
+
+.welcome-section div img {
+    width: 100%;
+}
+
+.welcome-section .article-container article h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+.welcome-section .article-container article p {
+    color: var(--paragrap);
+}
+
+.welcome-section .article-container button {
+    margin-top: 2rem;
+    padding: .5rem 1rem;
+    border-radius: 90px;
+    cursor: pointer;
+}
+
+.welcome-section .article-container button:first-of-type {
+    border: 1px solid var(--btn-color);
+    margin-right: 25px;
+    color: white;
+    background-color: var(--btn-color);
+}
+
+.welcome-section .article-container button:last-child {
+    border: var(--btn-color) solid 1px;
+    background-color: unset;
+    color: var(--btn-color);
+}
