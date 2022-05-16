@@ -1,6 +1,6 @@
 /* fonts import */
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
 
 /* common classes */
 * {
@@ -79,7 +79,9 @@ header nav li:last-child a {
 
 .welcome-section .article-container article h1 {
     font-size: 3.5rem;
-    font-weight: bold;
+    font-family: 'Secular One', sans-serif;
+    line-height: 60px;
+    margin-bottom: 20px;
 }
 
 .welcome-section .article-container article p {
@@ -106,9 +108,30 @@ header nav li:last-child a {
     color: var(--btn-color);
 }
 
+.Garden {
+    width: 100%;
+    height: 250px;
+    /* background-color: #bb939332; */
+    background: url('../images/WATERMARK.png');
+    background-size: 200px;
+    background-repeat: no-repeat;
+    background-position-x: 90%;
+    background-position-y: center;
+    padding: 100px 12.5%;
+}
+
+.Garden .Read-container h5 {
+    color: var(--btn-color);
+}
+
+
 
 
 @media screen and (max-width:720px) {
+    html {
+        font-size: 14px;
+    }
+
     header nav {
         display: none;
     }
@@ -124,6 +147,11 @@ header nav li:last-child a {
     .welcome-section {
         margin-left: 0;
         flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .welcome-section .article-container {
+        margin-left: 30px;
     }
 
     .welcome-section .img-container {
@@ -131,4 +159,12 @@ header nav li:last-child a {
         width: 100%;
         background: linear-gradient(to top, var(--btn-color), white);
     }
+
+    .Garden {
+        width: 100%;
+        height: fit-content;
+        background-position-x: 120%;
+        background-size: 140px;
+    }
+
 }
