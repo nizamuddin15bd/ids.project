@@ -88,7 +88,7 @@ header nav li:last-child a {
 
 .welcome-section .article-container button {
     margin-top: 2rem;
-    padding: .5rem 1rem;
+    padding: .9rem 1.8rem;
     border-radius: 90px;
     cursor: pointer;
 }
@@ -105,3 +105,7 @@ header nav li:last-child a {
     background-color: unset;
     color: var(--btn-color);
 }
+
+
+
+@media screen {}
