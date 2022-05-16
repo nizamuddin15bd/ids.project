@@ -108,4 +108,27 @@ header nav li:last-child a {
 
 
 
-@media screen {}
+@media screen and (max-width:720px) {
+    header nav {
+        display: none;
+    }
+
+    .logo-hamBurger-container {
+        display: flex;
+        justify-content: space-between;
+        width: 55%;
+        margin-left: auto;
+        padding: 20px;
+    }
+
+    .welcome-section {
+        margin-left: 0;
+        flex-direction: column;
+    }
+
+    .welcome-section .img-container {
+        margin-top: 30px;
+        width: 100%;
+        background: linear-gradient(to top, var(--btn-color), white);
+    }
+}
