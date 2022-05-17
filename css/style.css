@@ -182,12 +182,27 @@ header nav li:last-child a {
     align-content: center;
 }
 
+.Frame-container .Mutant-Ape .Mutant-profile-img {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+.Frame-container .Mutant-Ape .Mutant-profile-img img {
+    width: 40px;
+    padding-top: 0;
+}
+
+
 .fa-heart {
     color: red;
 }
 
 .Frame-container .Mutant-Ape .Mutant-profile-img .Profile img {
     padding-right: 11px;
+    display: inline-block;
+    margin: 0 auto;
 }
 
 .Frame-container .Mutant-Ape .unnamed {
@@ -278,15 +293,26 @@ header nav li:last-child a {
 }
 
 .highlight {
-    margin-top: 2.5rem;
     display: flex;
     align-items: center;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-left: 12.5rem;
+    margin-bottom: 14.5rem;
 }
 
-.highlight:last-child {
-    padding-right: 50px;
+
+.instagram {
+    padding-right: 6rem;
 }
 
+.instagram h5 {
+    color: var(--btn-color);
+}
+
+.youtube h5 {
+    color: var(--btn-color);
+}
 
 
 
@@ -296,7 +322,7 @@ header nav li:last-child a {
 
 @media screen and (max-width:720px) {
     html {
-        font-size: 14px;
+        font-size: 13px;
     }
 
     header nav {
@@ -334,8 +360,27 @@ header nav li:last-child a {
         background-size: 140px;
     }
 
-    .under .under-container {
-        margin-left: 12.5%;
+    .under .under-container .spotligh h5 {
+        font-size: .40rem;
+    }
+
+    .create {
+        flex-direction: column;
+    }
+
+    .create .creator-img img {
+        width: 305px;
+        padding-top: 2.5rem;
+        margin-left: 0;
+    }
+
+    .highlight {
+        flex-direction: column;
+        margin-left: 0;
+    }
+
+    .instagram {
+        margin-bottom: 2rem;
     }
 
 
