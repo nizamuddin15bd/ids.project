@@ -19,6 +19,8 @@ html {
     --article-title: black;
     --paragrap: #878787;
     --btn-color: #45B26B;
+    --background: #F4FFF8;
+    --Multant: #fff;
 
 }
 
@@ -118,11 +120,174 @@ header nav li:last-child a {
     background-position-x: 90%;
     background-position-y: center;
     padding: 100px 12.5%;
+
 }
 
 .Garden .Read-container h5 {
     color: var(--btn-color);
+    cursor: pointer;
 }
+
+.Garden .Read-container p {
+    color: var(--paragrap);
+    line-height: 1.5rem;
+}
+
+/* Under section start */
+.under {
+    width: 100%;
+    overflow: hidden;
+    height: 607px;
+    background-color: var(--background);
+    margin-bottom: 154px;
+}
+
+.under .under-container {
+    margin-left: 12.5%;
+}
+
+.under .under-container .spotligh {
+    padding-top: 4.5rem;
+    padding-bottom: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.under .under-container .spotligh h5 {
+    padding-right: 9rem;
+    color: var(--btn-color);
+}
+
+/* Frame-container start */
+.Frame-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Frame-container .Mutant-Ape {
+    /* width: 225px; */
+    background-color: var(--Multant);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+
+.Frame-container .Mutant-Ape .Mutant-profile-img .Profile {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.fa-heart {
+    color: red;
+}
+
+.Frame-container .Mutant-Ape .Mutant-profile-img .Profile img {
+    padding-right: 11px;
+}
+
+.Frame-container .Mutant-Ape .unnamed {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 12px;
+    padding-bottom: 1rem;
+}
+
+.Frame-container .Mutant-Ape .unnamed p {
+    color: var(--paragrap);
+}
+
+.Frame-container .Mutant-Ape .unnamed .unnamed-img {
+    display: flex;
+    /* align-items: center; */
+
+}
+
+.Frame-container .Mutant-Ape .unnamed .unnamed-img img {
+    padding-right: 5px;
+    height: 20px;
+}
+
+.Frame-container .Mutant-Ape p {
+    padding-bottom: 1rem;
+    font-size: 12px;
+}
+
+.Frame-container .Mutant-Ape .Mutant-comment {
+    display: flex;
+
+}
+
+.Frame-container .Mutant-Ape .Mutant-comment .Reaction {
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    padding-right: 3rem;
+}
+
+.Frame-container .Mutant-Ape .Mutant-comment .Reaction p {
+    padding-left: .50rem;
+}
+
+.Frame-container .Mutant-Ape .Mutant-comment .comment {
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    padding-right: 20px;
+}
+
+.Frame-container .Mutant-Ape .Mutant-comment .comment p {
+    padding-left: .50rem;
+}
+
+.Frame-container .Mutant-Ape .Mutant-comment .comment .fa-heart {
+    color: red;
+}
+
+.create {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.create .repeat {
+    margin-left: 12.5%;
+}
+
+.create .repeat h1 {
+    font-size: 3rem;
+    font-family: 'Secular One', sans-serif;
+}
+
+.create .repeat p {
+    color: var(--paragrap);
+}
+
+.create .repeat button {
+    margin-top: 2rem;
+    padding: 19px 26px;
+    border-radius: 90px;
+    border: none;
+    background-color: var(--btn-color);
+    color: var(--background);
+}
+
+.highlight {
+    margin-top: 2.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.highlight:last-child {
+    padding-right: 50px;
+}
+
+
+
+
 
 
 
@@ -166,5 +331,10 @@ header nav li:last-child a {
         background-position-x: 120%;
         background-size: 140px;
     }
+
+    .under .under-container {
+        margin-left: 12.5%;
+    }
+
 
 }
