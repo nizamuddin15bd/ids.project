@@ -82,12 +82,13 @@ header nav li:last-child a {
 .welcome-section .article-container article h1 {
     font-size: 3.5rem;
     font-family: 'Secular One', sans-serif;
-    line-height: 60px;
-    margin-bottom: 20px;
+    line-height: 4rem;
+    margin-bottom: 10px;
 }
 
 .welcome-section .article-container article p {
     color: var(--paragrap);
+    line-height: 1.7rem;
 }
 
 .welcome-section .article-container button {
@@ -115,11 +116,12 @@ header nav li:last-child a {
     height: 250px;
     /* background-color: #bb939332; */
     background: url('../images/WATERMARK.png');
-    background-size: 200px;
+    background-size: 335px;
     background-repeat: no-repeat;
     background-position-x: 90%;
-    background-position-y: center;
-    padding: 200px 12.5%;
+    background-position-y: 140px;
+    padding: 250px 12.5%;
+
 
 }
 
@@ -130,7 +132,8 @@ header nav li:last-child a {
 
 .Garden .Read-container p {
     color: var(--paragrap);
-    line-height: 1.5rem;
+    line-height: 1.7rem;
+
 }
 
 /* Under section start */
