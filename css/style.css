@@ -1,17 +1,39 @@
 /* fonts import */
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Secular+One&display=swap');
+
+/* @font-face {
+    font-family: DescriptionFont;
+    src: url(/fonts/sf-pro-display/SFPRODISPLAYMEDIUM.OTF);
+} */
+
+@font-face {
+    font-family: TitleFont;
+    src: url(/fonts/cunia.ttf);
+}
+
+@font-face {
+    font-family: paragrapfont;
+    src: url(/fonts/sf-pro-display/SFPRODISPLAYREGULAR.OTF);
+}
+
+@font-face {
+    font-family: sfnavbar;
+    src: url(/fonts/sf-pro-display/SFPRODISPLAYMEDIUM.OTF);
+}
 
 /* common classes */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    white-space: inherit;
 }
 
 html {
     font-size: 16px;
-    font-family: 'Roboto', sans-serif;
+    font-family: sfnavbar;
 }
 
 :root {
@@ -21,7 +43,13 @@ html {
     --btn-color: #45B26B;
     --background: #F4FFF8;
     --Multant: #fff;
+    --box-sadow: #FCFCFD;
 
+}
+
+body {
+    width: 100vw;
+    overflow-x: hidden;
 }
 
 .align-center {
@@ -29,14 +57,29 @@ html {
     align-items: center;
 }
 
+
 /* ===========main========== */
 /* header */
+h1,
+.spotligh div>h2 {
+    font-family: TitleFont;
+}
+
+button {
+    font-family: sfnavbar;
+}
+
+/* section>h1 {
+    color: red;
+} */
+
 header nav {
     list-style: none;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
+    /* justify-content: space-between; */
     margin-right: 7.5%;
-    width: 70%;
+    /* width: 70%; */
     margin-left: auto;
     padding: 25px 0;
 }
@@ -50,6 +93,7 @@ header nav li a {
     color: var(--nav-menu);
     display: inline-block;
     padding: 12px 27px;
+    white-space: nowrap;
 }
 
 header nav li:last-child a {
@@ -89,6 +133,7 @@ header nav li:last-child a {
 .welcome-section .article-container article p {
     color: var(--paragrap);
     line-height: 1.7rem;
+    font-family: paragrapfont;
 }
 
 .welcome-section .article-container button {
@@ -264,6 +309,8 @@ header nav li:last-child a {
     color: red;
 }
 
+/* create start */
+
 .create {
     display: flex;
     align-items: center;
@@ -276,11 +323,14 @@ header nav li:last-child a {
 
 .create .repeat h1 {
     font-size: 3rem;
-    font-family: 'Secular One', sans-serif;
+    font-family: TitleFont;
+
 }
 
 .create .repeat p {
     color: var(--paragrap);
+    font-family: paragrapfont;
+    line-height: 1.7rem;
 }
 
 .create .repeat button {
@@ -290,6 +340,7 @@ header nav li:last-child a {
     border: none;
     background-color: var(--btn-color);
     color: var(--background);
+    cursor: pointer;
 }
 
 .highlight {
@@ -308,12 +359,138 @@ header nav li:last-child a {
 
 .instagram h5 {
     color: var(--btn-color);
+    cursor: pointer;
 }
 
 .youtube h5 {
     color: var(--btn-color);
+    cursor: pointer;
 }
 
+/* creat end */
+
+/* =============hall start======== */
+.hall {
+    margin-left: 6.5rem;
+    margin-bottom: 13.5rem;
+}
+
+.hall .box-shadow .box {
+    width: 198.4px;
+    background-color: var(--box-sadow);
+    text-align: center;
+    line-height: 2rem;
+    font-weight: 500;
+    border-radius: 16px;
+    padding: 24px;
+}
+
+.hall .box-shadow .box img {
+    padding-bottom: 1rem;
+    border-radius: 50%;
+    /* overflow: hidden; */
+}
+
+/* .hall .box-shadow .box p:nth-child(2) {
+    color: var(--paragrap);
+    font-weight: 500;
+} */
+
+.hall .box-shadow .box span {
+    color: var(--paragrap);
+    color: black;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hall .box-shadow .box p {
+    color: var(--paragrap);
+    font-family: 'Poppins', sans-serif;
+}
+
+.hall .box-shadow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hall h1 {
+    margin-left: 3.5rem;
+    margin-bottom: 4.5rem;
+    font-size: 3rem;
+}
+
+.hall .box-shadow .box p {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.hall .box-shadow .box span p {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.box-border {
+    border: 1px solid black;
+}
+
+
+
+
+.box-shadow-2 {
+    box-shadow: 0 70px 50px 0px rgba(0, 0, 0, .1);
+}
+
+.virtual {
+    margin: 0 12.5rem 5px 12.5rem;
+}
+
+.virtual h1 {
+    letter-spacing: 1px;
+    font-size: 3rem;
+    font-family: TitleFont;
+}
+
+.virtual .collective .collective-box {
+    background-color: #fff;
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    border-radius: 2rem;
+    margin-right: 4.5rem;
+    margin-top: 6.5rem;
+}
+
+.virtual .collective .collective-box h1 {
+    font-size: 26px;
+    letter-spacing: 1px;
+    font-family: TitleFont;
+}
+
+.virtual .collective .collective-box p {
+    color: var(--paragrap);
+    font-family: paragrapfont;
+}
+
+.virtual .collective .collective-box button {
+    padding: 19px 27px;
+    background: #fff;
+    color: var(--btn-color);
+    border: none;
+    cursor: pointer;
+}
+
+.virtual .collective .collective-box .btn-grassroots button {
+    border: 1px solid var(--btn-color);
+    border-radius: 90px;
+}
+
+.virtual .collective {
+    display: flex;
+}
+
+.benner-finel {
+    display: flex;
+    margin-top: 20px;
+}
 
 
 
@@ -382,6 +559,39 @@ header nav li:last-child a {
     .instagram {
         margin-bottom: 2rem;
     }
+
+    .hall {
+        margin-left: 0;
+        overflow-x: hidden;
+        height: 450px;
+    }
+
+    .hall .box-shadow img {
+        padding-right: 20px;
+    }
+
+    .hall .box-shadow {
+        display: flex;
+        align-items: center;
+        height: 550px;
+        font-family: ;
+
+    }
+
+    .hall .box-shadow .box {
+        margin-left: 2rem;
+    }
+
+    .hall h1 {
+        margin-left: 3.5rem;
+        margin-bottom: 4.5rem;
+        font-size: 4rem;
+    }
+
+    .hall .fa-arrow-left-long {
+        display: none;
+    }
+
 
 
 }
