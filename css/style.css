@@ -44,6 +44,7 @@ html {
     --background: #F4FFF8;
     --Multant: #fff;
     --box-sadow: #FCFCFD;
+    --miniblack: #4B4B4B;
 
 }
 
@@ -77,6 +78,7 @@ header nav {
     list-style: none;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     /* justify-content: space-between; */
     margin-right: 7.5%;
     /* width: 70%; */
@@ -711,8 +713,8 @@ header nav li:last-child a {
 }
 
 .seed-section article {
-    text-align: center;
-    margin: 0 auto;
+    /* text-align: center; */
+    /* margin: 0 auto; */
 }
 
 .seed-section img:nth-child(2) {
@@ -857,6 +859,149 @@ header nav li:last-child a {
 
 
 
+/* ============Gallery section start============== */
+header nav img {
+    margin-right: 220px;
+    width: 35px;
+    height: 100%;
+}
+
+.gallery-text {
+    margin: 4.7rem 0 3.5rem 0;
+    text-align: center;
+    line-height: 70px;
+}
+
+.gallery-text h1 {
+    font-family: TitleFont;
+    font-size: 34px;
+}
+
+.gallery-text .nav-galery li {
+    list-style-type: none;
+    display: inline;
+}
+
+.gallery-text .nav-galery li a {
+    text-decoration: none;
+    color: var(--nav-menu);
+    font-family: sfnavbar;
+    margin-right: 20px;
+}
+
+
+.gallery-text .nav-galery li a span {
+    border: 1px solid var(--btn-color);
+    padding: 10px 15px 10px 15px;
+    border-radius: 20px;
+}
+
+/* ======gallery end=========== */
+.gallery {
+    margin: 0 190px;
+}
+
+.gallery .gallery-one .gallery-main-container .gallery-profile img {
+    width: 27px;
+    border-radius: 50%;
+    margin-right: 11px;
+}
+
+.gallery .gallery-one .gallery-main-container .gallery-profile {
+    margin: 7px 0 10px 0;
+}
+
+.gallery .gallery-one .gallery-main-container {
+    width: 225px;
+    height: 343px;
+    padding: 15px;
+    /* border: 1px solid #000; */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
+
+.gallery .gallery-main {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 45px;
+}
+
+.gallery .gallery-one .gallery-main-container>img {
+    width: 196px;
+}
+
+.gallery .gallery-one .gallery-main-container .gallery-profile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.gallery .gallery-one .gallery-main-container .gallery-profile .Nizam {
+    display: flex;
+    align-items: center;
+}
+
+.gallery .gallery-one .gallery-main-container h5 {
+    font-size: 12px;
+    font-family: sfnavbar;
+    color: var(--miniblack);
+}
+
+.gallery .gallery-one .gallery-main-container .gallery-unminted {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.gallery .gallery-one .gallery-main-container .gallery-unminted {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 12px 0 10px 0;
+}
+
+.gallery .gallery-one .gallery-main-container .gallery-unminted>div {
+    display: flex;
+    align-items: center;
+}
+
+.gallery .gallery-one .gallery-main-container .gallery-unminted>div img {
+    margin-right: 5px;
+}
+
+.gallery .gallery-one .gallery-main-container .gallery-unminted>div p {
+    font-size: 14px;
+    font-family: sfnavbar;
+}
+
+.gallery .gallery-one .gallery-main-container .gallery-unminted>div p span {
+    color: var(--miniblack);
+}
+
+.gallery .gallery-one .gallery-main-container .gallery-unminted p {
+    font-size: 12px;
+    font-family: sfnavbar;
+    color: var(--paragrap);
+}
+
+.gallery .gallery-one .gallery-main-container .gallery-comment {
+    display: flex;
+    font-size: 12px;
+    font-family: sfnavbar;
+    color: var(--miniblack);
+}
+
+.gallery .gallery-one .gallery-main-container .gallery-comment>div {
+    display: flex;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+.gallery .gallery-one .gallery-main-container .gallery-comment p {
+    margin-left: 5px;
+}
+
+
 
 
 
@@ -972,14 +1117,18 @@ header nav li:last-child a {
 
     .seed-section {
         flex-direction: column;
+    }
+
+    .seed-section .seed-top-img {
+        display: flex;
+    }
+
+    .seed-section .seed-top-img img {
+        position: static;
+    }
+
+    /* .seed-section {
+        flex-direction: column;
         position: initial;
-    }
-
-    .seed-section article {
-        text-align: center;
-        margin: 0;
-    }
-
-
-
+    } */
 }
